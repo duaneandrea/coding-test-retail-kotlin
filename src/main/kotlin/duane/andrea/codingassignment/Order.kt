@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/order1")
 class Order {
 
-    //@GetMapping("")
+    @GetMapping("")
     fun MakeOrder():Double{
         val listItem = listOf<Double>(7653.877,9876.98,87632.78)
         return BillCalculatorServiceImpl.calculateTotalPayableAmount(
