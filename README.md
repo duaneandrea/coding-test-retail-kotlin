@@ -1,5 +1,4 @@
 # coding-test-retail-kotlin
-# coding-test-retail-java
 This is a coding Test that i was given to implement in Kotlin so I also implemented it in Java
 
 The Retail Store Discounts
@@ -37,3 +36,7 @@ CASE 3 >> CUSTOMER (0.95) (Since more than two years) 2*( 0.95*(0.95*(1.99+14.99
 CASE 4 >> CUSTOMER (0.95) (Since less than two years) 2*( 0.95*(1.99+14.99+4.99+19.99) + 0.99 ) = 81.704 discount = 4.196
 
 I used the IntelliJ IDEA IDE to implement the solution by creating two sub packages the domain in which it held all the classes that pertained to the Product, Customer, The Customer Type and the Item to be bought. Since in the problem statement the data source was not mentioned i used an item in which i would iterate to collect the product type and the customer type. For test I used JUnit to run the unit tests with Coverage. For testing the endpoints i used Postman which is a great tool for testing RestFul APIs in developemnt mode as well as production mode. I also used swagger UI to test my endpoints in UI mode.
+
+I have used Kotlin and Gradle to build the restful API. The test screenshots are also available. I have build two sub packages that is domain and services. The service has one interface the BillcalculatorInterface which is implemented by the BillCalculator class in the service package that allows us to write three functions which actually calculate the actual discount. The other sub package is the domain sub package and this allows us to define our main classes to instantiate our main objects in the retail shop that is the product, customer, the customer type and the Item class which will be consumed by the BillCalculatorService. Then lastly we run our project from the Order Class in our root package which them is run by the RestController to map the output into Post RESTFUL API.
+
+For Testing and coverage I managed to Run Test With All Coverage to the BillService Class using JUNIT. With Time limits I couldn’t install Swagger UI to run my endpoints on the UI or to Auntheticate my API since it was not requested in the document. Screenshots are also available.
